@@ -1,0 +1,22 @@
+What's this?
+============
+
+It's the source code for a t-shirt that counts how much unread e-mail
+the wearer has, using a Lilypad Arduino microcontroller.  You can read
+more, and see a video demonstration, at my blog post here:
+
+  http://blog.printf.net/articles/2010/03/29/an-e-mail-counting-t-shirt
+
+How's it work?
+==============
+
+There's a Python script (gmail.py) to be run on any Bluetooth-enabled 
+device with Python installed (I use an Android phone, you could use a 
+laptop).  The script simply downloads your Gmail RSS feed to see how 
+much unread e-mail you have, and sends that number over a serial port 
+every two seconds.  I use /dev/rfcomm0, which is the serial device that
+connects my phone to the Bluetooth dongle on my Lilypad.
+
+There's also a C program (lilypad.pde) that runs on the Lilypad, reads 
+a number over the serial port, and renders that number on a set of LEDs 
+(I use seven LEDs).  That's it.
