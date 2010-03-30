@@ -5,7 +5,7 @@ It's the source code for a t-shirt that counts how much unread e-mail
 the wearer has, using a Lilypad Arduino microcontroller.  You can read
 more, and see a video demonstration, at my blog post here:
 
-  http://blog.printf.net/articles/2010/03/29/an-e-mail-counting-t-shirt
+   http://blog.printf.net/articles/2010/03/30/email-counting-tshirt
 
 How's it work?
 ==============
