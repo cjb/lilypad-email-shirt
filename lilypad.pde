@@ -8,7 +8,7 @@
 void setup() {
   Serial.begin(115200);  
   for (int i = 12; i <= 18; i++) {
-    /* Set pins 12-17 to output, and strobe them to test. */
+    /* Set pins 12-18 to output, and strobe them to test. */
     pinMode(i, OUTPUT);
     digitalWrite(i, HIGH);
     delay(100);
